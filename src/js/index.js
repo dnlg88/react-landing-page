@@ -12,12 +12,16 @@ import Jumbotron from "./component/Jumbotron.jsx"
 import Card from "./component/Card.jsx"
 import Footer from "./component/Footer.jsx"
 
+let cardArray = [<Card />, <Card />, <Card />, <Card />]
 //render your react application
 ReactDOM.render(
     <div>
         <Nav />
         <Jumbotron />
-        <Card />
+        <div className="container mb-5 d-flex flex-wrap"> 
+        {cardArray}
+        </div>
+        
         <Footer />
     </div>,
     document.querySelector("#app"));
