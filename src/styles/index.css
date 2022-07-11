@@ -10,3 +10,8 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+@media screen and (min-width: 912px), screen and (max-width: 1000px) {
+    footer {
+        transform: translateY(185px);
+    }
+} 
